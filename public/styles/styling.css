@@ -6,3 +6,107 @@
     font-style: italic;
     font-weight: bold;
 }
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.text-serif {
+    font-family: serif;
+}
+
+.text-sans-serif {
+    font-family: sans-serif;
+}
+
+.text-capitalized {
+    text-transform: capitalize;
+}
+
+.div-bordered {
+    border: 1px solid black;
+    margin-bottom: 16px;
+}
+.div-bordered--dashed {
+    border: 1px dashed black;
+    margin-bottom: 16px;
+}
+
+.div-bg {
+    background-color: yellowgreen;
+    margin-bottom: 16px;
+}
+.div-bg-img {
+    background-image: url('../assets/sushi.jpeg');
+    height: 80px;
+    margin-bottom: 16px;
+}
+
+.div-shadowed {
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+}
+
+.div-radius {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+}
+
+.div-circle {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+}
+
+.div-margin {
+    background-color: orange;
+    width: 80px;
+    height: 80px;
+    margin: 40px 60px 80px 120px;
+}
+
+.div-padding {
+    background-color: orange;
+    width: 80px;
+    height: 80px;
+    padding: 40px 60px 80px 120px;
+    margin-bottom: 16px;
+}
+
+.div-complex {
+    background-color: palevioletred;
+    border: 2px solid red;
+    border-radius: 50%;
+    box-shadow: 2px 2px 16px rgba(0,0,0,0.6);
+    width: 120px;
+    height: 120px;
+    margin: 60px 80px;
+    padding: 36px;
+}
+
+.btn-styled {
+    background: paleturquoise;
+    padding: 16px;
+    border-radius: 8px;
+}
+.btn-styled--warning {
+    background-color: orange;
+}
+.btn-styled--danger {
+    background-color: red;
+    color: white;
+}
+.btn-styled--large {
+    font-size: 24px;
+}
+
+.btn-styled--fixed {
+    width: 180px;
+}
