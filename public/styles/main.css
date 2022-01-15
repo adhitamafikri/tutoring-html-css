@@ -13,3 +13,11 @@
   margin: 0;
   margin-bottom: 24px;
 }
+
+#exercise {
+  display: none;
+}
+
+#exercise.visible {
+  display: block;
+}
