@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Basics</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <h1 class="c-section-heading">Intro to Form Inputs</h1>
+        <form action="">
+            <p>Input text</p>
+            <input type="text" name="" id="" required>
+
+            <p>Password Input</p>
+            <input type="password" name="" id="" required>
+
+            <p>Email Input</p>
+            <input type="email" name="" id="" required>
+
+            <p>Input Number</p>
+            <input type="number" name="" id="" required>
+
+            <p>Time Input</p>
+            <input type="time" name="" id="">
+
+            <p>Radio Selection</p>
+            <input type="radio" name="ex-radio" id="" required>Item1
+            <input type="radio" name="ex-radio" id="" required>Item2
+
+            <p>Checkbox Selection</p>
+            <input type="checkbox" name="ex-chk" id="" required>Item1
+            <input type="checkbox" name="ex-chk" id="" required>Item2
+
+            <p>Input type Submit</p>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <div class="c-divider"></div>
+
+    <button onclick="onRevealClick()">Reveal Exercise</button>
+    <section id="exercise">
+        <form action="">
+            <p>Nama Saya</p>
+            <input type="text" name="name" id="" placeholder="Nama Saya" required maxlength="30" minlength="3">
+
+            <p>Email Saya</p>
+            <input type="email" name="email" id="" placeholder="emailsaya@mail.com" required>
+
+            <p>Umur Saya</p>
+            <input type="number" name="age" id="" placeholder="Umur Saya" required min="10" max="100">
+
+            <p>Jenis Kelamin</p>
+            <input type="radio" name="gender" id="" required>Laki-laki
+            <input type="radio" name="gender" id="">Perempuan
+
+            <p>Laptop Saya</p>
+            <input type="checkbox" name="laptop" id="" required>Asus
+            <input type="checkbox" name="laptop" id="">Acer
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

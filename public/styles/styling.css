@@ -1,0 +1,8 @@
+.text-pink {
+    color: pink;
+}
+
+.text-bold-italic {
+    font-style: italic;
+    font-weight: bold;
+}
