@@ -110,3 +110,55 @@
 .btn-styled--fixed {
     width: 180px;
 }
+
+.input-text-styled {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.input-text-styled::placeholder {
+    color: purple;
+}
+
+.input-file-styled {
+    display: block;
+    position: relative;
+}
+.input-file-styled input {
+    visibility: none;
+    opacity: 0;
+    position: absolute;
+}
+.input-file-styled .c-input-custom {
+    width: 140px;
+    background-color: teal;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.c-flex-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.c-flex-row .c-flex-row__item {
+    border: 1px solid black;
+    border-radius: 8px;
+    flex: 1;
+    margin: 16px;
+    padding: 16px;
+}
+
+.c-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.c-flex-column .c-flex-column__item {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 16px;
+}
