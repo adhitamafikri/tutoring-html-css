@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Styling</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/more-styling/more-styling.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <!-- Basic -->
+    <h1 class="c-section-heading">More on Styling Using CSS</h1>
+
+    <h2>CSS Variables</h2>
+    <p>Same concept with variables in programming. The value inside a variable can be reused in for any elements</p>
+    <p>Should be defined inside the <code>:root</code> selector. Example:</p>
+    <h3>Defining Variables</h3>
+    <code>
+        <pre>
+            :root {
+                --bg-white: #fff;
+                --bg-dark: #000;
+                --color-black: #2f2f2f;
+                --color-danger: rgb(255, 0, 0);
+                --color-warning: rgb(0, 255, 255);
+            }
+        </pre>
+    </code>
+
+    <h3>Using Variables</h3>
+    <code>
+        <pre>
+            .u-bg-white {
+                background-color: var(--bg-white);
+            }
+            
+            .u-bg-dark {
+                background-color: var(--bg-dark);
+            }
+        </pre>
+    </code>
+
+    <h2>Box Sizing</h2>
+    <div class="div-no-box-sized">300 x 100 px, 16px padding. No box-sizing</div>
+    <div class="div-box-sized">300 x 100 px, 16px padding. Box-sized</div>
+
+</body>
+
+</html>

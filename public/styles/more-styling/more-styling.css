@@ -1,0 +1,31 @@
+:root {
+    --bg-white: #fff;
+    --bg-dark: #000;
+    --color-black: #2f2f2f;
+    --color-danger: rgb(255, 0, 0);
+    --color-warning: rgb(0, 255, 255);
+}
+
+.u-bg-white {
+    background-color: var(--bg-white);
+}
+
+.u-bg-dark {
+    background-color: var(--bg-dark);
+}
+
+.div-no-box-sized {
+    border: 2px solid red;
+    width: 300px;
+    height: 100px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.div-box-sized {
+    border: 2px solid pink;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100px;
+    padding: 16px;
+}
