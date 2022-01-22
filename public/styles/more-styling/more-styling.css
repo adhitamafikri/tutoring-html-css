@@ -1,31 +1,80 @@
 :root {
-    --bg-white: #fff;
-    --bg-dark: #000;
-    --color-black: #2f2f2f;
-    --color-danger: rgb(255, 0, 0);
-    --color-warning: rgb(0, 255, 255);
+  --bg-white: #fff;
+  --bg-dark: #000;
+  --color-black: #2f2f2f;
+  --color-danger: rgb(255, 0, 0);
+  --color-warning: rgb(0, 255, 255);
 }
 
 .u-bg-white {
-    background-color: var(--bg-white);
+  background-color: var(--bg-white);
 }
 
 .u-bg-dark {
-    background-color: var(--bg-dark);
+  background-color: var(--bg-dark);
 }
 
 .div-no-box-sized {
-    border: 2px solid red;
-    width: 300px;
-    height: 100px;
-    padding: 16px;
-    margin-bottom: 16px;
+  border: 2px solid red;
+  width: 300px;
+  height: 100px;
+  padding: 16px;
+  margin-bottom: 16px;
 }
 
 .div-box-sized {
-    border: 2px solid pink;
-    box-sizing: border-box;
-    width: 300px;
-    height: 100px;
-    padding: 16px;
+  border: 2px solid pink;
+  box-sizing: border-box;
+  width: 300px;
+  height: 100px;
+  padding: 16px;
+}
+
+.input-text-placeholder::placeholder {
+  color: pink;
+}
+
+.div-before-after::before {
+  content: "----before-content----";
+}
+.div-before-after::after {
+  content: "-after-content-";
+  display: inline-block;
+  background-color: red;
+  width: 100px;
+  height: 40px;
+}
+
+.div-meter {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  border-radius: 24px;
+  width: 480px;
+  height: 56px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.div-meter::after {
+  background-color: greenyellow;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* width: 80px; */
+  height: inherit;
+
+  animation-name: loading-progress;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loading-progress {
+    0% { width: 0%; }
+    20%, 60% { width: 40%; }
+    65%, 85% { width: 75%; }
+    100% { width: 100%; }
 }
