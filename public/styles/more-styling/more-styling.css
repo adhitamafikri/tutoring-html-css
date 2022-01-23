@@ -34,6 +34,15 @@
   color: pink;
 }
 
+.c-list-marked li::marker {
+    color: red;
+}
+
+.p-selection::selection {
+    color: red;
+    background-color: yellow;
+}
+
 .div-before-after::before {
   content: "----before-content----";
 }
@@ -75,47 +84,101 @@
 }
 
 @keyframes loading-progress {
-    0% { width: 0%; content: "0%"; }
-    20%, 40% { width: 40%; content: "40%"; }
-    45%, 55% { width: 55%; content: "55%"; }
-    60%, 75% { width: 75%; content: "75%"; }
-    80%, 100% { width: 100%; content: "100%"; }
+  0% {
+    width: 0%;
+    content: "0%";
+  }
+  20%,
+  40% {
+    width: 40%;
+    content: "40%";
+  }
+  45%,
+  55% {
+    width: 55%;
+    content: "55%";
+  }
+  60%,
+  75% {
+    width: 75%;
+    content: "75%";
+  }
+  80%,
+  100% {
+    width: 100%;
+    content: "100%";
+  }
 }
 
 .div-non-resp {
-    box-sizing: border-box;
-    background-color: teal;
-    color: white;
-    width: 240px;
-    padding: 16px;
+  box-sizing: border-box;
+  background-color: teal;
+  color: white;
+  width: 240px;
+  padding: 16px;
 }
 
 .div-non-resp {
-    box-sizing: border-box;
-    background-color: teal;
-    color: white;
-    width: 240px;
-    padding: 16px;
+  box-sizing: border-box;
+  background-color: teal;
+  color: white;
+  width: 240px;
+  padding: 16px;
 }
 
 .div-resp {
-    box-sizing: border-box;
-    background-color: palegoldenrod;
-    width: 100%;
-    padding: 16px;
+  box-sizing: border-box;
+  background-color: palegoldenrod;
+  width: 100%;
+  padding: 16px;
 }
 /* tablet */
 @media screen and (max-width: 960px) {
-    .div-resp {
-        width: 80%;
-        background-color: purple;
-    }
+  .div-resp {
+    width: 80%;
+    background-color: purple;
+  }
 }
 
 /* phones */
 @media screen and (max-width: 540px) {
-    .div-resp {
+  .div-resp {
+    width: 50%;
+    background-color: saddlebrown;
+  }
+}
+
+.c-exercise {
+  background: salmon;
+  width: 100%;
+}
+.c-exercise__flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+}
+.c-exercise__item {
+    background-color: white;
+    margin: 16px;
+    padding: 16px;
+    width: 33%;
+    transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width: 960px) {
+    .c-exercise__flex {
+        flex-direction: column;
+    }
+    .c-exercise__item {
+        background-color: grey;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .c-exercise__item {
+        background-color: greenyellow;
         width: 50%;
-        background-color: saddlebrown;
     }
 }
