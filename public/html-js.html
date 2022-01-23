@@ -102,6 +102,15 @@
     <div class="c-div-hover" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
         Hover over this div
     </div>
+    <h3>obsubmit</h3>
+    <p>This can only be used at the form elements</p>
+    <form name="test-form" onsubmit="handleSubmission(event)" autocomplete="off">
+        <input type="text" name="name" id="name" placeholder="Your name">
+        <br>
+        <input type="email" name="email" id="email" placeholder="Your email">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
 
     <script src="./scripts/html-js.js"></script>
 </body>
