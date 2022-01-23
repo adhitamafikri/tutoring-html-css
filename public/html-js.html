@@ -7,10 +7,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML and JS basic</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/html-js/html-js.css">
 </head>
 
 <body>
     <h1 class="c-section-heading">HTML and JS basic</h1>
+
+    <h2>Getting started</h2>
+    <p>create a file with <code>.js</code> extension</p>
+    <p>Javscript files are normally stored in a <code>script</code> directory</p>
+    <p>import your javascript into HTML by using <code>script</code> tag at the end of the html body</p>
+    <p>it is nice to have your devtools open while playing with javascript</p>
+
+    <h2>Variables</h2>
+    <code>
+        <pre>
+            const CONSTANT = number | string | boolean | object | array
+
+            let SOMETHING = number | string | boolean | object | array
+
+            var SOMETHING = number | string | boolean | object | array
+        </pre>
+    </code>
+
+    <h2>Functions</h2>
+
+    <h2>Objects</h2>
+    <p>defining object</p>
+    <code>
+        <pre>
+            const Person = {
+                name: "Adhitama",
+                age: 24,
+                canSing: true,
+                greeting: function () {
+                    alert("greeting");
+                },
+            };
+        </pre>
+    </code>
+    <p>accessing object properties</p>
+    <code>
+        <pre>
+            Person.name
+            Person.age
+            Person.canSing
+            Person.greeting()
+        </pre>
+    </code>
+
+    <h2>Arrays</h2>
+    <p>defining Arrays</p>
+    <h3>Array of numbers</h3>
+    <code>
+        <pre>
+            const arr = [1, 2, 3, 5, ...]
+        </pre>
+    </code>
+    <h3>Array of strings</h3>
+    <code>
+        <pre>
+            const arr = ['string', 'name', 'seomething here', ...]
+        </pre>
+    </code>
+    <h3>Array of objects</h3>
+    <code>
+        <pre>
+            const arr = [
+                {
+                    name: "A",
+                    count: 10,
+                    executor: function () {
+                        console.log(this.name, this.count);
+                    },
+                },
+                {
+                    name: "B",
+                    count: 5,
+                    executor: function () {
+                        console.log(this.name);
+                    },
+                },
+                ....
+            ]
+        </pre>
+    </code>
+
+    <h2>Events</h2>
+    <h3>onclick</h3>
+    <button onclick="invokeAlert()">Click me</button>
+    <h3>onchange, onkeydown</h3>
+    <input type="text" name="" id="" onchange="handleChange(this)" onkeydown="handleChange(this)">
+    <h3>onmouseover, onmouseout</h3>
+    <div class="c-div-hover" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+        Hover over this div
+    </div>
 
     <script src="./scripts/html-js.js"></script>
 </body>

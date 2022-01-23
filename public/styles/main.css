@@ -21,3 +21,8 @@
 #exercise.visible {
   display: block;
 }
+
+code {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 4px;
+}

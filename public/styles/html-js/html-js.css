@@ -1,0 +1,11 @@
+.c-div-hover {
+    background: pink;
+    width: 100px;
+    height: 100px;
+    padding: 16px;
+    transition: all 0.2s ease-out;
+}
+
+.c-div-hover.hovered {
+    background-color: green;
+}
